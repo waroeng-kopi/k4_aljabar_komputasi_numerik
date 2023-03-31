@@ -1,5 +1,5 @@
-#include <iostream>
-#include <string>
+#include <iostream>     // input output library
+#include <string>       // string library
 
 // Definisikan struktur untuk merepresentasikan tipe data spasial
 struct Point {
