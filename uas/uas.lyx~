@@ -1,0 +1,3607 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+NAMA : ADAM RAHMAT ILAHI
+\end_layout
+
+\begin_layout Standard
+NPM : 13.2021.1.01030
+\end_layout
+
+\begin_layout Standard
+UAS ALJABAR DAN KOMPUTASI NUMERIK (P) 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Hitung 
+\series bold
+Determinan
+\series default
+, 
+\series bold
+Invers Matrix
+\series default
+ serta tentukan 
+\series bold
+Eigen Value
+\series default
+ dan 
+\series bold
+Eigen Vector
+\series default
+ pada Matriks dari Persamaan 3 variabel berikutnya ini;
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x+y+2z=9
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2x+4y-3z=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3x+6y-5z=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Jawaban :
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Determinan
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Mengubah persamaan kedalam bentuk matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}1 & 1 & 2\\
+2 & 4 & -3\\
+3 & 6 & -5
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}=\left.\begin{bmatrix}9\\
+1\\
+0
+\end{bmatrix}\right\} A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menghitung determinan menggunakan metode sarrus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=\begin{bmatrix}1 & 1 & 2\\
+2 & 4 & -3\\
+3 & 6 & -5
+\end{bmatrix}\begin{array}{cc}
+1 & 1\\
+2 & 4\\
+3 & 6
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(1*4*-5)+(1*-3*3)+(2*2*6)-(3*4*2)-(6*-3*1)-(-5*2*1)$
+\end_inset
+
+
+\begin_inset Formula $=(-20)+(-9)+24-24-(-18)-(-10)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menempatkan A pada kolom I.
+ untuk menghitung Determinan 
+\begin_inset Formula $D_{(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{(x)}=\begin{bmatrix}9 & 1 & 2\\
+1 & 4 & -3\\
+0 & 6 & -5
+\end{bmatrix}\begin{array}{cc}
+9 & 1\\
+1 & 4\\
+0 & 6
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(9*4*-5)+(1*-3*0)+(2*1*6)-(0*4*2)-(6*-3*9)-(-5*1*1)$
+\end_inset
+
+
+\begin_inset Formula $=(-180)+0+12-0-(-162)-(-5)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menempatkan A pada kolom II.
+ untuk menghitung Determinan
+\begin_inset Formula $D_{(y)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{(y)}=\begin{bmatrix}1 & 9 & 2\\
+2 & 1 & -3\\
+3 & 0 & -5
+\end{bmatrix}\begin{array}{cc}
+1 & 9\\
+2 & 1\\
+3 & 0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(1*1*-5)+(9*-3*3)+(2*2*0)-(3*1*2)-(0*-3*1)-(-5*2*9)$
+\end_inset
+
+
+\begin_inset Formula $=(-5)+(-18)+0-6-0-(-90)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menempatkan A pada kolom III.
+ untuk menghitung Determinan 
+\begin_inset Formula $D_{(z)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{(z)}=\begin{bmatrix}1 & 1 & 9\\
+2 & 4 & 1\\
+3 & 6 & 0
+\end{bmatrix}\begin{array}{cc}
+1 & 1\\
+2 & 4\\
+3 & 6
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(1*4*0)+(1*1*3)+(9*2*6)-(3*4*9)-(6*1*1)-(0*2*1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=0+3+108-108-6-0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menentukan nilai 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+dengan nilai 
+\begin_inset Formula $D,D_{(x)},D_{(y)},D_{(z)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=\frac{D_{(x)}}{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{-1}{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=\frac{D_{(y)}}{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{-2}{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=\frac{D_{(z)}}{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{-3}{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Himpunan penyelesaian 
+\begin_inset Formula $\begin{Bmatrix}x & y & z\end{Bmatrix}$
+\end_inset
+
+dengan nilai 
+\begin_inset Formula $\begin{Bmatrix}1 & 2 & 3\end{Bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Invers
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}1 & 1 & 2\\
+2 & 4 & -3\\
+3 & 6 & -5
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}=\left.\begin{bmatrix}9\\
+1\\
+0
+\end{bmatrix}\right\} B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Kof\left(A\right)=\begin{bmatrix}\begin{bmatrix}4 & -3\\
+6 & -5
+\end{bmatrix} & -\begin{bmatrix}2 & -3\\
+3 & -5
+\end{bmatrix} & \begin{bmatrix}2 & 4\\
+3 & 6
+\end{bmatrix}\\
+-\begin{bmatrix}1 & 2\\
+6 & -5
+\end{bmatrix} & \begin{bmatrix}1 & 2\\
+3 & -5
+\end{bmatrix} & -\begin{bmatrix}1 & 1\\
+3 & 6
+\end{bmatrix}\\
+\begin{bmatrix}1 & 2\\
+4 & -3
+\end{bmatrix} & -\begin{bmatrix}1 & 2\\
+2 & -3
+\end{bmatrix} & \begin{bmatrix}1 & 1\\
+2 & 4
+\end{bmatrix}
+\end{bmatrix}=\begin{bmatrix}-2 & 1 & 0\\
+17 & -11 & -3\\
+-11 & 7 & 2
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Adj\left(A\right)=Kof\left(A\right)^{t}=\begin{bmatrix}-2 & 1 & 0\\
+17 & -11 & -3\\
+-11 & 7 & 2
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X=\frac{1}{detA}Adj\left(A\right)B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{-1}\begin{bmatrix}-2 & 1 & 0\\
+17 & -11 & -3\\
+-11 & 7 & 2
+\end{bmatrix}\begin{bmatrix}9\\
+1\\
+0
+\end{bmatrix}=-1\begin{bmatrix}-18+17+0\\
+9+\left(-11\right)+0\\
+0+\left(-3\right)+0
+\end{bmatrix}=-1\begin{bmatrix}-1\\
+-2\\
+-3
+\end{bmatrix}=\begin{bmatrix}1\\
+2\\
+3
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Himpunan penyelesaian 
+\begin_inset Formula $\begin{Bmatrix}x & y & z\end{Bmatrix}$
+\end_inset
+
+dengan nilai 
+\begin_inset Formula $\begin{Bmatrix}1 & 2 & 3\end{Bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Eigen Value dan Eigen Vector 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x+y+2z=9
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2x+4y-3z=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3x+6y-5z=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dengan 
+\begin_inset Formula $x=1$
+\end_inset
+
+,
+\begin_inset Formula $y=2$
+\end_inset
+
+, dan 
+\begin_inset Formula $z=3$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+y+2z=9\quad\rightarrow\quad\left(1\right)+\left(2\right)+2\left(3\right)=9
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2x+4y-3z=1\quad\rightarrow\quad2\left(1\right)+4\left(2\right)-3\left(3\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3x+6y-5z=0\quad\rightarrow\quad3\left(1\right)+6\left(2\right)-5\left(3\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+1+2+6=9\\
+2+8-9=1\\
+3+12-15=0
+\end{array}\;\right\} \quad\begin{bmatrix}1 & 2 & 6\\
+2 & 8 & -9\\
+3 & 12 & -15
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}1 & 2 & 6\\
+2 & 8 & -9\\
+3 & 12 & -15
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eigenvectors for the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\thickapprox\begin{pmatrix}-0.642\\
+0.568\\
+1
+\end{pmatrix}$
+\end_inset
+
+, eigenvalue 
+\begin_inset Formula $\lambda_{1}\thickapprox-10.113$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\thickapprox\begin{pmatrix}-24.336\\
+7.347\\
+1
+\end{pmatrix}$
+\end_inset
+
+, eigenvalue 
+\begin_inset Formula $\lambda_{2}\thickapprox0.150$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\thickapprox\begin{pmatrix}2.645\\
+0.568\\
+1
+\end{pmatrix}$
+\end_inset
+
+, eigenvalue 
+\begin_inset Formula $\lambda_{3}\thickapprox3.963$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Details : 
+\end_layout
+
+\begin_layout Standard
+1.
+ From the definition of eigenvector 
+\begin_inset Formula $v$
+\end_inset
+
+ corresponding to the eigenvalue 
+\begin_inset Formula $λ$
+\end_inset
+
+ we have 
+\begin_inset Formula $Aλ=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then : 
+\begin_inset Formula $Av-λv=(A-λI)∙v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Equation has a nonzero solution if and only if 
+\begin_inset Formula $det(A-λI)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $det(A-λI)=\begin{bmatrix}1-\lambda & 2 & 6\\
+2 & 8-\lambda & -9\\
+3 & 12 & -15-\lambda
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-λ^{3}-6λ^{2}+41λ-6≈-(λ+(10.113))∙(λ-(0.150))∙(λ-(3.963))=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Details using Triangle’s Rule, Rule of Sarrus, Montante’s method (Bareiss
+ algorithm)), and Gaussian elimination.
+ 
+\end_layout
+
+\begin_layout Standard
+So,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;\begin{array}{c}
+1.\\
+2.\\
+3.
+\end{array}\;\begin{array}{c}
+\lambda_{1}\thickapprox\\
+\lambda_{2}\thickapprox\\
+\lambda_{3}\thickapprox
+\end{array}\begin{array}{c}
+-10.113\\
+0.150\\
+3.963
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ For every 
+\begin_inset Formula $λ$
+\end_inset
+
+ we find its own vectors: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad1)\quad\lambda_{1}\thickapprox-10.113$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad A-\lambda_{1}I\thickapprox\begin{bmatrix}11.113 & 2 & 6\\
+2 & 18.113 & -9\\
+3 & 12 & -4.887
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad Av=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad\left(A-λI\right)v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we have a homogenous system of linear equations, we solve it by Gaussian
+ Elimination:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+11.113 & 2 & 6\\
+2 & 18.113 & -9\\
+3 & 12 & -4.887
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(0.090\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Divide row 1 by 11.113
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{1}}{\left(11.113\right)}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 0.180 & 0.540\\
+2 & 18.113 & -9\\
+3 & 12 & -4.887
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 2 x row 1 from row 2 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}-2∙R_{1}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & 0.180 & 0.540\\
+0 & 17.753 & -10.080\\
+3 & 12 & -4.887
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 3 x row 1 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-3∙R_{1}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & 0.180 & 0.540\\
+0 & 17.753 & -10.080\\
+0 & 11.460 & -6.507
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(0.056\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Divine row 1 by 17.753 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{2}}{\left(17.753\right)}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & 0.180 & 0.540\\
+0 & 1 & -0.568\\
+0 & 11.460 & -6.507
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-11.460\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 11.460 x row 2 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-11.460∙R_{2}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & 0.180 & 0.540\\
+0 & 1 & -0.568\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-0.180\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 0.180 x row 2 from row 1 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}-0.180∙R_{2}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 0 & 0.642\\
+0 & 1 & -0.568\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}+0.642∙x_{3}=0\\
+x_{2}-0.568∙x_{3}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ from the equation 2 of the system (1): 
+\begin_inset Formula $x_{2}=0.568\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ from the equation 1 of the system (1): 
+\begin_inset Formula $x_{1}=-0.642\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\begin{array}{c}
+x_{1}=-0.642x_{3}\\
+x_{2}=0.568x_{3}\\
+x_{3}=x_{3}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+General Solution: 
+\begin_inset Formula $X=\begin{bmatrix}-0.642x_{3}\\
+0.568x_{3}\\
+x_{3}
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution set: 
+\begin_inset Formula $\left\{ x_{3}\centerdot\begin{bmatrix}-0.642\\
+0.568\\
+1
+\end{bmatrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{3}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\nu_{1}\thickapprox\begin{bmatrix}-0.642\\
+0.568\\
+1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $\quad2)\quad\lambda_{2}\thickapprox0.150$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad A-\lambda_{2}I\thickapprox\begin{bmatrix}0.850 & 2 & 6\\
+2 & 7.850 & -9\\
+3 & 12 & -15.150
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad Av=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad\left(A-λI\right)v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we have a homogenous system of linear equations, we solve it by Gaussian
+ Elimination:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+0.850 & 2 & 6\\
+2 & 7.850 & -9\\
+3 & 12 & -15.150
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(1.176\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Divide row 1 by 0.850
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{1}}{\left(0.850\right)}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 2.352 & 7.056\\
+2 & 7.850 & -9\\
+3 & 12 & -15.150
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 2 x row 1 from row 2 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}-2∙R_{1}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & 2.352 & 7.056\\
+0 & 3.146 & -23.113\\
+3 & 12 & -15.150
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 3 x row 1 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-3∙R_{1}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & 2.352 & 7.056\\
+0 & 3.146 & -23.113\\
+0 & 4.944 & -36.319
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(0.318\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Divine row 2 by 3.146 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{2}}{\left(3.146\right)}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & 2.352 & 7.056\\
+0 & 1 & -7.347\\
+0 & 4.944 & -36.319
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-4.944\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 4.944 x row 2 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-4.944∙R_{2}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & 2.352 & 7.056\\
+0 & 1 & -7.347\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-2.352\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 2.352 x row 2 from row 1 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}-2.352∙R_{2}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 0 & 24.336\\
+0 & 1 & -7.347\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}+24.336∙x_{3}=0\\
+x_{2}-7.347∙x_{3}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ from the equation 2 of the system (1): 
+\begin_inset Formula $x_{2}=7.347\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ from the equation 1 of the system (1): 
+\begin_inset Formula $x_{1}=-24.336\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\begin{array}{c}
+x_{1}=-24.336x_{3}\\
+x_{2}=7.347x_{3}\\
+x_{3}=x_{3}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+General Solution: 
+\begin_inset Formula $X=\begin{bmatrix}-24.336x_{3}\\
+7.347x_{3}\\
+x_{3}
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution set: 
+\begin_inset Formula $\left\{ x_{3}\centerdot\begin{bmatrix}-0.642\\
+0.568\\
+1
+\end{bmatrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{3}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\nu_{2}\thickapprox\begin{bmatrix}-0.642\\
+0.568\\
+1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $\quad3)\quad\lambda_{3}\thickapprox3.963$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad A-\lambda_{1}I\thickapprox\begin{bmatrix}-2.963 & 2 & 6\\
+2 & 4.037 & -9\\
+3 & 12 & -18.963
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad Av=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad\left(A-λI\right)v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we have a homogenous system of linear equations, we solve it by Gaussian
+ Elimination:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+-2.963 & 2 & 6\\
+2 & 4.037 & -9\\
+3 & 12 & -18.963
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-0.337\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Divide row 1 by 
+\begin_inset Formula $-2.963$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{1}}{\left(-2.963\right)}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & -0.675 & -2.025\\
+2 & 7.850 & -9\\
+3 & 12 & -15.150
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 2 x row 1 from row 2 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}-2∙R_{1}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -0.675 & -2.025\\
+0 & 5.287 & -4.950\\
+3 & 12 & -18.963
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 3 x row 1 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-3∙R_{1}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -0.675 & -2.025\\
+0 & 5.387 & -4.950\\
+0 & 14.025 & -12.889
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(0.186\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Divine row 1 by 
+\begin_inset Formula $5.387$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{2}}{\left(3.146\right)}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -0.675 & -2.025\\
+0 & 1 & -0.919\\
+0 & 14.025 & -12.889
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-14.025\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\begin_inset Formula $14.025$
+\end_inset
+
+ x row 2 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-14.025∙R_{2}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -0.675 & -2.025\\
+0 & 1 & -0.919\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-0.180\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\begin_inset Formula $-0.675$
+\end_inset
+
+ x row 2 from row 1 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}=-0.675∙R_{2}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 0 & -2.645\\
+0 & 1 & -0.919\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}-2.645∙x_{3}=0\\
+x_{2}-0.919∙x_{3}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ from the equation 2 of the system (1): 
+\begin_inset Formula $x_{2}=0.919\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ from the equation 1 of the system (1): 
+\begin_inset Formula $x_{1}=2.645\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\begin{array}{c}
+x_{1}=2.645x_{3}\\
+x_{2}=0.919x_{3}\\
+x_{3}=x_{3}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+General Solution: 
+\begin_inset Formula $X=\begin{bmatrix}2.645x_{3}\\
+0.919x_{3}\\
+x_{3}
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution set: 
+\begin_inset Formula $\left\{ x_{3}\centerdot\begin{bmatrix}2.645\\
+0.919\\
+1
+\end{bmatrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{3}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\nu_{1}\thickapprox\begin{bmatrix}2.645\\
+0.919\\
+1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Hitung 
+\series bold
+Determinan
+\series default
+, 
+\series bold
+Invers Matrix
+\series default
+ serta tentukan 
+\series bold
+Eigen Value
+\series default
+ dan 
+\series bold
+Eigen Vector
+\series default
+ pada Matriks dari Persamaan 3 variabel berikutnya ini;
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2x+3y-z=6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+2y-4z=8
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+y+4z=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Jawaban :
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Determinan
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Mengubah persamaan kedalam bentuk matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}2 & 3 & -1\\
+1 & 2 & -4\\
+1 & 1 & 4
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}=\left.\begin{bmatrix}6\\
+8\\
+4
+\end{bmatrix}\right\} A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menghitung determinan menggunakan metode sarrus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=\begin{bmatrix}2 & 3 & -1\\
+1 & 2 & -4\\
+1 & 1 & 4
+\end{bmatrix}\begin{array}{cc}
+2 & 3\\
+1 & 2\\
+1 & 1
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(2*2*4)+(3*-4*1)+(-1*1*1)-(1*2*-1)-(1*-4*2)-(4*1*3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=16+(-12)+(-1)-(-2)-(-8)-12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menempatkan A pada kolom I.
+ untuk menghitung Determinan 
+\begin_inset Formula $D_{(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{(x)}=\begin{bmatrix}6 & 3 & -1\\
+8 & 2 & -4\\
+4 & 1 & 4
+\end{bmatrix}\begin{array}{cc}
+6 & 3\\
+8 & 2\\
+4 & 1
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(6*2*4)+(3*-4*4)+(-1*8*1)-(4*2*-1)-(1*-4*6)-(4*8*3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=48+(-48)+(-8)-(-8)-(-24)-96$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-72$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menempatkan A pada kolom II.
+ untuk menghitung Determinan
+\begin_inset Formula $D_{(y)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{(y)}=\begin{bmatrix}2 & 6 & -1\\
+1 & 8 & -4\\
+1 & 4 & 4
+\end{bmatrix}\begin{array}{cc}
+2 & 6\\
+1 & 8\\
+1 & 4
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(2*8*4)+(6*-4*1)+(-1*2*4)-(1*8*-1)-(4*-4*2)-(4*1*6)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=64+(-24)+(-4)-(-8)-(-32)-24$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=52$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menempatkan A pada kolom III.
+ untuk menghitung Determinan 
+\begin_inset Formula $D_{(z)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{(z)}=\begin{bmatrix}2 & 3 & 6\\
+1 & 2 & 8\\
+1 & 1 & 4
+\end{bmatrix}\begin{array}{cc}
+2 & 3\\
+1 & 2\\
+1 & 1
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(2*2*4)+(3*8*1)+(6*1*1)-(1*2*6)-(1*8*2)-(4*1*3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=16+24+6-12-16-12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Menentukan nilai 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+dengan nilai 
+\begin_inset Formula $D,D_{(x)},D_{(y)},D_{(z)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=\frac{D_{(x)}}{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{-72}{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-72$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=\frac{D_{(y)}}{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{52}{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=52$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=\frac{D_{(z)}}{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{6}{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Himpunan penyelesaian 
+\begin_inset Formula $\begin{Bmatrix}x & y & z\end{Bmatrix}$
+\end_inset
+
+dengan nilai 
+\begin_inset Formula $\begin{Bmatrix}-72 & 52 & 6\end{Bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Invers
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}2 & 3 & -1\\
+1 & 2 & -4\\
+1 & 1 & 4
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}=\left.\begin{bmatrix}6\\
+8\\
+4
+\end{bmatrix}\right\} B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Kof\left(A\right)=\begin{bmatrix}\begin{bmatrix}2 & -4\\
+1 & 4
+\end{bmatrix} & -\begin{bmatrix}1 & -4\\
+1 & 4
+\end{bmatrix} & \begin{bmatrix}1 & 2\\
+1 & 1
+\end{bmatrix}\\
+-\begin{bmatrix}3 & -1\\
+1 & 4
+\end{bmatrix} & \begin{bmatrix}2 & -1\\
+1 & 4
+\end{bmatrix} & -\begin{bmatrix}2 & 3\\
+1 & 1
+\end{bmatrix}\\
+\begin{bmatrix}3 & -1\\
+2 & -4
+\end{bmatrix} & -\begin{bmatrix}2 & -1\\
+1 & -4
+\end{bmatrix} & \begin{bmatrix}2 & 3\\
+1 & 2
+\end{bmatrix}
+\end{bmatrix}=\begin{bmatrix}12 & -8 & -1\\
+-13 & 9 & 1\\
+-10 & 7 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Adj\left(A\right)=Kof\left(A\right)^{t}=\begin{bmatrix}12 & -13 & -10\\
+-8 & 9 & 7\\
+-1 & 1 & 1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X=\frac{1}{detA}Adj\left(A\right)B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{1}\begin{bmatrix}12 & -13 & -10\\
+-8 & 9 & 7\\
+-1 & 1 & 1
+\end{bmatrix}\begin{bmatrix}6\\
+8\\
+4
+\end{bmatrix}=1\begin{bmatrix}72-104-40\\
+-48+72+28\\
+-6+8+4
+\end{bmatrix}=1\begin{bmatrix}-72\\
+52\\
+6
+\end{bmatrix}=\begin{bmatrix}-72\\
+52\\
+6
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Himpunan penyelesaian 
+\begin_inset Formula $\begin{Bmatrix}x & y & z\end{Bmatrix}$
+\end_inset
+
+dengan nilai 
+\begin_inset Formula $\begin{Bmatrix}-72 & 52 & 6\end{Bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\emph on
+Eigen Value dan Eigen Vector 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2x+3y-z=6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+2y-4z=8
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+y+4z=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dengan 
+\begin_inset Formula $x=-72$
+\end_inset
+
+,
+\begin_inset Formula $y=52$
+\end_inset
+
+, dan 
+\begin_inset Formula $z=6$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2x+3y-z=6\quad\rightarrow\quad2\left(-72\right)+3\left(52\right)-\left(6\right)=6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+2y-4z=8\quad\rightarrow\quad\left(-72\right)+2\left(52\right)-4\left(6\right)=8
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+y+4z=4\quad\rightarrow\quad\left(-72\right)+\left(52\right)+4\left(6\right)=4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+-144+156-6=6\\
+-72+104-24=8\\
+-72+52+24=4
+\end{array}\;\right\} \quad\begin{bmatrix}-144 & 156 & -6\\
+-72 & 104 & -24\\
+-72 & 52 & 24
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}-144 & 156 & -6\\
+-72 & 104 & -24\\
+-72 & 52 & 24
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eigenvectors for the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\thickapprox\begin{pmatrix}2.050\\
+0.968\\
+1
+\end{pmatrix}$
+\end_inset
+
+, eigenvalue 
+\begin_inset Formula $\lambda_{1}\thickapprox-73.258$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\thickapprox\begin{pmatrix}0.910\\
+0.913\\
+1
+\end{pmatrix}$
+\end_inset
+
+, eigenvalue 
+\begin_inset Formula $\lambda_{2}\thickapprox5.980$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v\thickapprox\begin{pmatrix}-3.660\\
+-4.543\\
+1
+\end{pmatrix}$
+\end_inset
+
+, eigenvalue 
+\begin_inset Formula $\lambda_{3}\thickapprox51.278$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Details : 
+\end_layout
+
+\begin_layout Standard
+1.
+ From the definition of eigenvector 
+\begin_inset Formula $v$
+\end_inset
+
+ corresponding to the eigenvalue 
+\begin_inset Formula $λ$
+\end_inset
+
+ we have 
+\begin_inset Formula $Aλ=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then : 
+\begin_inset Formula $Av-λv=(A-λI)∙v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Equation has a nonzero solution if and only if 
+\begin_inset Formula $det(A-λI)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+det(A-λI)=\begin{bmatrix}-144-\lambda & 156 & -6\\
+-72 & 104-\lambda & -24\\
+-72 & 52 & 24-\lambda
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-λ^{3}-16λ^{2}+3888λ-22464≈-(λ+(73.258))∙(λ-(5.980))∙(λ-(51.278))=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Details using Triangle’s Rule, Rule of Sarrus, Montante’s method (Bareiss
+ algorithm)), and Gaussian elimination.
+ 
+\end_layout
+
+\begin_layout Standard
+So,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\;\begin{array}{c}
+1.\\
+2.\\
+3.
+\end{array}\;\begin{array}{c}
+\lambda_{1}\thickapprox\\
+\lambda_{2}\thickapprox\\
+\lambda_{3}\thickapprox
+\end{array}\begin{array}{c}
+-73.258\\
+5.980\\
+51.278
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ For every 
+\begin_inset Formula $λ$
+\end_inset
+
+ we find its own vectors: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad1)\quad\lambda_{1}\thickapprox-73.258$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad A-\lambda_{1}I\thickapprox\begin{bmatrix}-70.742 & 156 & -6\\
+-72 & 177.258 & -24\\
+-72 & 52 & 97.258
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad Av=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad\left(A-λI\right)v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we have a homogenous system of linear equations, we solve it by Gaussian
+ Elimination:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+-70.742 & 156 & -6\\
+-72 & 177.258 & -24\\
+-72 & 52 & 97.258
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-0.014\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Divide row 1 by 11.113
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{1}}{\left(-70.742\right)}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & -2.205 & 0.085\\
+-72 & 177.258 & -24\\
+-72 & 52 & 97.258
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(72\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 2 x row 1 from row 2 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}-\left(-72\right)∙R_{1}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -2.205 & 0.085\\
+0 & 18.484 & -17.893\\
+-72 & 52 & 97.258
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(72\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 3 x row 1 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-\left(-72\right)∙R_{1}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -2.205 & 0.085\\
+0 & 18.484 & -17.893\\
+0 & -106.775 & 103.365
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(0.054\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Divine row 1 by 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+18.484
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{2}}{\left(18.484\right)}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -2.205 & 0.085\\
+0 & 1 & -0.968\\
+0 & -106.775 & 103.365
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(106.775\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+106.775
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ x row 2 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-106.775∙R_{2}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -2.205 & 0.085\\
+0 & 1 & -0.968\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(2.205\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2.205
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ x row 2 from row 1 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}-2.205∙R_{2}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 0 & -2.050\\
+0 & 1 & -0.968\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}-2.050∙x_{3}=0\\
+x_{2}-0.968∙x_{3}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ from the equation 2 of the system (1): 
+\begin_inset Formula $x_{2}=0.968\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ from the equation 1 of the system (1): 
+\begin_inset Formula $x_{1}=2.050\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\begin{array}{c}
+x_{1}=2.050x_{3}\\
+x_{2}=0.968x_{3}\\
+x_{3}=x_{3}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+General Solution: 
+\begin_inset Formula $X=\begin{bmatrix}2.050x_{3}\\
+0.968x_{3}\\
+x_{3}
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution set: 
+\begin_inset Formula $\left\{ x_{3}\centerdot\begin{bmatrix}2.050\\
+0.968\\
+1
+\end{bmatrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{3}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\nu_{1}\thickapprox\begin{bmatrix}2.050\\
+0.968\\
+1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $\quad2)\quad\lambda_{2}\thickapprox5.980$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad A-\lambda_{2}I\thickapprox\begin{bmatrix}-149.980 & 156 & -6\\
+-72 & 98.020 & -24\\
+-72 & 52 & 18.020
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad Av=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad\left(A-λI\right)v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we have a homogenous system of linear equations, we solve it by Gaussian
+ Elimination:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+-149.980 & 156 & -6\\
+-72 & 98.020 & -24\\
+-72 & 52 & 18.020
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-0.007\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Divide row 1 by 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+-149.980
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{1}}{\left(-149.980\right)}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & -1.040 & 0.040\\
+-72 & 98.020 & -24\\
+-72 & 52 & 18.020
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(72\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 2 x row 1 from row 2 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}-\left(-72\right)∙R_{1}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -1.040 & 0.040\\
+0 & 23.130 & -21.120\\
+-72 & 52 & 18.020
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(72\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 3 x row 1 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-\left(-72\right)∙R_{1}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -1.040 & 0.040\\
+0 & 23.130 & -21.120\\
+0 & -22.890 & 20.900
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(0.043\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Divine row 2 by 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+23.130
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{2}}{\left(23.130\right)}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -1.040 & 0.040\\
+0 & 1 & -0.913\\
+0 & -22.890 & 20.900
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(22.890\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+22.890
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ x row 2 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-22.890∙R_{2}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -1.040 & 0.040\\
+0 & 1 & -0.913\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(1.040\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1.040
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ x row 2 from row 1 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}-1.040∙R_{2}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 0 & -0.910\\
+0 & 1 & -0.913\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}-0.910∙x_{3}=0\\
+x_{2}-0.913∙x_{3}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ from the equation 2 of the system (1): 
+\begin_inset Formula $x_{2}=0.913\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ from the equation 1 of the system (1): 
+\begin_inset Formula $x_{1}=0.910\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\begin{array}{c}
+x_{1}=0.910x_{3}\\
+x_{2}=0.913x_{3}\\
+x_{3}=x_{3}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+General Solution: 
+\begin_inset Formula $X=\begin{bmatrix}0.910x_{3}\\
+0.913x_{3}\\
+x_{3}
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution set: 
+\begin_inset Formula $\left\{ x_{3}\centerdot\begin{bmatrix}0.910\\
+0.913\\
+1
+\end{bmatrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{3}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\nu_{2}\thickapprox\begin{bmatrix}0.910\\
+0.913\\
+1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula $\quad3)\quad\lambda_{3}\thickapprox51.278$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad A-\lambda_{1}I\thickapprox\begin{bmatrix}-195.278 & 156 & -6\\
+-72 & 52.722 & -24\\
+-72 & 52 & -27.278
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad Av=λv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad\left(A-λI\right)v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we have a homogenous system of linear equations, we solve it by Gaussian
+ Elimination:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+-195.278 & 156 & -6\\
+-72 & 52.722 & -24\\
+-72 & 52 & -27.278
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-0.005\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Divide row 1 by 
+\begin_inset Formula $-195.278$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{1}}{\left(-195.278\right)}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & -0.799 & 0.031\\
+-72 & 52.722 & -24\\
+-72 & 52 & -27.278
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(72\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 2 x row 1 from row 2 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{2}-\left(-72\right)∙R_{1}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -0.799 & 0.031\\
+0 & -4.796 & -21.788\\
+-72 & 52 & -27.278
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(72\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 3 x row 1 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-\left(-72\right)∙R_{1}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -0.799 & 0.031\\
+0 & -4.796 & -21.788\\
+0 & -5.518 & -25.066
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(0.208\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Divine row 1 by 
+\begin_inset Formula $-4.796$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{R_{2}}{\left(-4.796\right)}\:\rightarrow\,R_{2}\quad\left[\begin{array}{ccc}
+1 & -0.799 & 0.031\\
+0 & 1 & 4.543\\
+0 & -5.518 & -25.066
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(5.518\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\begin_inset Formula $-5.518$
+\end_inset
+
+ x row 2 from row 3 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}-\left(-5.518\right)∙R_{2}\:\rightarrow\,R_{3}\quad\left[\begin{array}{ccc}
+1 & -0.799 & 0.031\\
+0 & 1 & 4.543\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]x\left(-0.799\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Substract 
+\begin_inset Formula $-0.799$
+\end_inset
+
+ x row 2 from row 1 : 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}=-\left(-0.799\right)∙R_{2}\:\rightarrow\,R_{1}\quad\left[\begin{array}{ccc}
+1 & 0 & 3.660\\
+0 & 1 & 4.543\\
+0 & 0 & 0
+\end{array}\right.\left|\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x_{1}+3.660∙x_{3}=0\\
+x_{2}+4.543∙x_{3}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ from the equation 2 of the system (1): 
+\begin_inset Formula $x_{2}=-4.543\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Find the variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ from the equation 1 of the system (1): 
+\begin_inset Formula $x_{1}=-3.660\centerdot x_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Answer : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\begin{array}{c}
+x_{1}=-3.660x_{3}\\
+x_{2}=-4.543x_{3}\\
+x_{3}=x_{3}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+General Solution: 
+\begin_inset Formula $X=\begin{bmatrix}-3.660x_{3}\\
+-4.543x_{3}\\
+x_{3}
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution set: 
+\begin_inset Formula $\left\{ x_{3}\centerdot\begin{bmatrix}-3.660\\
+-4.543\\
+1
+\end{bmatrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{3}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\nu_{1}\thickapprox\begin{bmatrix}-3.660\\
+-4.543\\
+1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Syntax C++ untuk hitung determinan berikut implementasikan untuk 2 Matriks
+ pada soal sebelumnya.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename determinan-code.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hasil output :
+\end_layout
+
+\begin_layout Enumerate
+soal no 1
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename determinan-output-1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+soal no 2
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename determinan-output-2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Syntax C++ untuk Invers matriks dan implementasikan untuk hitung matrik
+ disoal nomor 1 dan 2
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
